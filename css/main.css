@@ -7,6 +7,8 @@ html {
 }
 
 body {
+    white-space: normal; /* Возврат к обычному переносу текста */
+    overflow-x: hidden; /* Отключение горизонтальной прокрутки */
     margin: 0;
     padding: 0;
     display: flex;
