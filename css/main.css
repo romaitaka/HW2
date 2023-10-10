@@ -11,6 +11,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    /* align-items: center; Вертикальное выравнивание по центру */
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -136,8 +137,10 @@ img {
     padding: 0;
     background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 1.39%, rgba(36, 32, 84, 0.23) 44.44%);
     background-image: url(../img/bridges.jpg);
-    background-size: cover;
+    background-size: 1600px 900px;
     background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center center;
 }
 
 .header__logo {
@@ -303,7 +306,7 @@ img {
 .guide__image {
     width: 787px;
     height: 626px;
-    margin-right: -311px;
+    margin-right: -230px;
 }
 
 .footer {
