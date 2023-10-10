@@ -6,14 +6,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    white-space: normal; /* Возврат к обычному переносу текста */
-    overflow-x: hidden; /* Отключение горизонтальной прокрутки */
+.body {
+    white-space: normal;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* align-items: center; Вертикальное выравнивание по центру */
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
