@@ -99,7 +99,6 @@ img {
 }
 
 .arrow-button {
-    display: flex;
     align-items: center;
     all: initial;
     cursor: pointer;
@@ -112,6 +111,7 @@ img {
 }
 
 #arrow-button {
+    display: flex;
     margin: 217px auto 79.5px auto;
 }
 
