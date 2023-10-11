@@ -39,9 +39,6 @@ img {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0 auto;
     width: 1140px;
 }
@@ -61,12 +58,17 @@ img {
     text-decoration: none;
 }
 
+.button-animation {
+    animation: pulse 1.5s infinite;
+}
+
 .button:hover {
     opacity: 0.8;
     background: #23CF7D;
 }
 
 .button_mod {
+    padding: 18px 49px;
     color: #FF7E36;
     background: #FFF;
     border: 1px solid #FF7E36;
@@ -95,11 +97,6 @@ img {
         /* Возвращаемся к исходному масштабу */
     }
 }
-
-.button-animation {
-    animation: pulse 1.5s infinite;
-}
-
 
 .arrow-button {
     display: flex;
@@ -136,17 +133,31 @@ img {
 .header {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 1.39%, rgba(36, 32, 84, 0.23) 44.44%), url('../img/bridges.jpg') no-repeat center top / cover;
 }
 
 .header__logo {
     display: flex;
+    width: 265px;
     margin: 83px auto 195px auto;
     align-items: center;
     gap: 5px;
     color: #fff;
     font-size: 22px;
     font-weight: 500;
+}
+
+.header__logo-name {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.header__logo-image {
+    display: block;
 }
 
 .header__offer {
@@ -196,6 +207,18 @@ img {
     margin: 0;
     padding: 0;
     padding-top: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .section-title {
@@ -264,16 +287,18 @@ img {
     padding-top: 146px;
 }
 
-.guide__possibilities-wrapper {
-    display: flex;
-    margin: 0;
+.wrapper {
     margin-top: 93px;
+    height: 626px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .guide__abilities {
+    width: 407px;
     display: flex;
     flex-direction: column;
-    margin: auto 176px auto 0;
     gap: 57px;
 }
 
@@ -281,7 +306,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: flex-start;
 }
 
 .guide__abilities-line {
@@ -299,9 +323,12 @@ img {
 }
 
 .guide__image {
+    position: absolute;
     width: 787px;
     height: 626px;
-    margin-right: -230px;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .footer {
