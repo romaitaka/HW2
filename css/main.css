@@ -288,7 +288,8 @@ img {
 }
 
 .wrapper {
-    margin-top: 93px;
+    margin: 93px auto 0;
+    width: 1600px;
     height: 626px;
     position: relative;
     display: flex;
